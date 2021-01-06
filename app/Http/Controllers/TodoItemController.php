@@ -16,7 +16,7 @@ class TodoItemController extends Controller
      */
     public function index(TodoList $todoList)
     {
-        return response(['todoItems' => $todoList->todoItems], 200);
+        return response(['todo_items' => $todoList->todoItems], 200);
     }
 
 

@@ -109,7 +109,7 @@ class TodoListController extends Controller
      */
     public function completed(TodoList $todoList)
     {
-        return response(['todoItems' => $todoList->completed], 200);
+        return response(['todo_items' => $todoList->completed], 200);
     }
 
 
@@ -134,7 +134,7 @@ class TodoListController extends Controller
      */
     public function incomplete(TodoList $todoList)
     {
-        return response(['todoItems' => $todoList->incomplete], 200);
+        return response(['todo_items' => $todoList->incomplete], 200);
     }
 
 
